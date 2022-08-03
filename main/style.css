@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url(../imgs/escritorio.jpg);
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+        fieldset{
+            border: 3px solid rgb(14, 63, 226);
+            
+        }
+        legend{
+            font-family: 'Righteous', cursive;
+            border: 1px solid rgb(14, 63, 226);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(14, 63, 226);
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+
+        }
+        .fontradio{
+            
+            font-family: 'Righteous', cursive;
+            color: white;
+            
+            
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            font-family: 'Righteous', cursive;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: rgb(14, 63, 226);
+        }
+        #data_nascimento{
+            font-family: 'Righteous', cursive;
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #submit{
+            font-family: 'Righteous', cursive;
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+            transform: translateY(3px);
+            
+        }
+    
